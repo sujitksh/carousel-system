@@ -23,11 +23,11 @@ function Login({onLogin}) {
         <form onSubmit={handleSubmit}>
           <div className={styles.row}>
             <i className="fas fa-user"></i>
-            <input type="text"  name="email" onChange={handleInput} placeholder="Email or Phone" required />
+            <input type="text"  value={email} name="email" onChange={handleInput} placeholder="Email or Phone" required />
           </div>
           <div className={styles.row}>
             <i className="fas fa-lock"></i>
-            <input type="password"  name="password" onChange={handleInput} placeholder="Password" required />
+            <input type="password"  value={password} name="password" onChange={handleInput} placeholder="Password" required />
           </div>
 
           <div className={`${styles.row} ${styles.button}`}>
